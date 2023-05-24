@@ -18,4 +18,4 @@ steps:
       protocol: https
       
       # The path to your DocSearch config file. Optional. Default: docsearch.config.json.
-      config: config.json
+      config: ../../config.json
