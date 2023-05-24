@@ -1,0 +1,50 @@
+{
+  "index_name": "WhaTapDocs",
+  "start_urls": [
+    "https://docs.whatap.io/"
+  ],
+  "sitemap_urls": [
+    "https://docs.whatap.io/sitemap.xml"
+  ],
+  "sitemap_alternate_links": true,
+  "stop_urls": [
+    "/release-notes/preview", "/wip", "/common-items"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": "(//nav[contains(@class, 'theme-doc-breadcrumbs')]/ul/li[2]//span/text())",
+      "type": "xpath",
+      "global": true,
+      "default_value": "..."
+    },
+    "lvl1": "article h1, header h1",
+    "lvl2": "article h2",
+    "lvl3": "article h3",
+    "lvl4": "article h4",
+    "lvl5": "article h5, article td:first-child",
+    "lvl6": "article h6",
+    "text": "article p, article li, article td:last-child"
+  },
+  "strip_chars": " .,;:#",
+  "custom_settings": {
+    "separatorsToIndex": "_",
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "type",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ]
+  },
+  "conversation_id": [
+    "833762294"
+  ],
+  "nb_hits": 46250
+}
