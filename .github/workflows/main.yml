@@ -1,13 +1,8 @@
 - name: Run Typesense DocSearch Scraper
   uses: celsiusnarhwal/typesense-scraper@v2.0.1
   with:
-    # Your Typesense API Key.
-    api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
-    # The hostname or IP address of your Typesense server.
+    api-key: ${{ o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi }}
     host: typesense.whatap.io
-    # The port of your Typesense server. Defaults to "8108".
     port: # optional, default is 8108
-    # The protocol over which the scraper should connect to your Typesense server. Defaults to "http".
     protocol: https
-    # The path to your DocSearch config JSON file, relative to the root of your repository. Defaults to "docsearch.config.json".
     config: config.json
