@@ -1,4 +1,4 @@
-- name: Run Typesense DocSearch Scraper
+name: Run Typesense DocSearch Scraper
   # You may pin to the exact commit or the version.
   # uses: celsiusnarhwal/typesense-scraper@15f9049f1e4a868fc94e45948f86bd0ceed2f4b3
   uses: celsiusnarhwal/typesense-scraper@v2.0.1
