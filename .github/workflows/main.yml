@@ -7,23 +7,21 @@ branding:
 
 inputs:
   api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
-    description: YourTypesense API Key.
-    required: true
-  host: typesense.whatap.io
-    description: The hostname or IP address of your Typesense server.
-    required: true
-  port:
-    description: The port of your Typesense server. Defaults to "8108".
-    required: false
-    default: "8108"
-  protocol: https
-    description: The protocol over which the scraper should connect to your Typesense server. Defaults to "http".
-    required: false
-    default: http
-  config: config.json
-    description: The path to your DocSearch config JSON file, relative to the root of your repository. Defaults to "docsearch.config.json".
-    required: false
-    default: docsearch.config.json
+		required: true
+	host: typesense.whatap.io
+		required: true
+	port:
+		description: The port of your Typesense server. Defaults to "8108".
+		required: false
+		default: "8108"
+	protocol: https
+		description: The protocol over which the scraper should connect to your Typesense server. Defaults to "http".
+		required: false
+		default: http
+	config: config.json
+		description: The path to your DocSearch config JSON file, relative to the root of your repository. Defaults to "docsearch.config.json".
+		required: false
+		default: docsearch.config.json
 
 runs:
   using: composite
