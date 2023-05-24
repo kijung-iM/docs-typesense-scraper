@@ -1,21 +1,15 @@
-steps:
-  - name: Checkout Repository
-    uses: actions/checkout@v3   # You MUST checkout your repository first!
-
-  - name: Run DocSearch Scraper
-    uses: celsiusnarhwal/typesense-scraper@v2
-    with:
-      # The secret containing your Typesense API key. Required.
-      api-key: ${{ o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi }}
-      
-      # The hostname or IP address of your Typesense server. Required.
-      host: typesense.whatap.io
-      
-      # The port on which your Typesense server is listening. Optional. Default: 8108.
-      port: 443
-      
-      # The protocol to use when connecting to your Typesense server. Optional. Default: http.
-      protocol: https
-      
-      # The path to your DocSearch config file. Optional. Default: docsearch.config.json.
-      config: ../../config.json
+- name: Run Typesense DocSearch Scraper
+  # You may pin to the exact commit or the version.
+  # uses: celsiusnarhwal/typesense-scraper@15f9049f1e4a868fc94e45948f86bd0ceed2f4b3
+  uses: celsiusnarhwal/typesense-scraper@v2.0.1
+  with:
+    # Your Typesense API Key.
+    api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
+    # The hostname or IP address of your Typesense server.
+    host: typesense.whatap.io
+    # The port of your Typesense server. Defaults to "8108".
+    port: # optional, default is 8108
+    # The protocol over which the scraper should connect to your Typesense server. Defaults to "http".
+    protocol: https
+    # The path to your DocSearch config JSON file, relative to the root of your repository. Defaults to "docsearch.config.json".
+    config: config.json
