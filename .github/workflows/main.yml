@@ -1,8 +1,8 @@
 - name: Run Typesense DocSearch Scraper
-    uses: whatap-docs/docs-typesnse-scraper@v2
-    with:
-      api-key: ${{ o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi }}
-      host: typesense.whatap.io
-      port: # optional, default is 8108
-      protocol: https
-      config: config.json
+  uses: whatap-docs/docs-typesnse-scraper@v2
+  with:
+   api-key: ${{ o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi }}
+   host: typesense.whatap.io
+   port: # optional, default is 8108
+   protocol: https
+   config: config.json
