@@ -1,0 +1,2 @@
+- name: Run Typesense DocSearch Scraper
+  uses: celsiusnarhwal/typesense-scraper@v2.0.1
