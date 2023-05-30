@@ -8,7 +8,7 @@
   ],
   "sitemap_alternate_links": true,
   "stop_urls": [
-    "/release-notes/preview", "/wip", "/common-items"
+    "/release-notes/preview", "/wip", "/common-items", "/en/tags", "/tags", "/ja/tags"
   ],
   "selectors": {
     "lvl0": {
