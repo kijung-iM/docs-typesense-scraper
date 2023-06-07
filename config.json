@@ -8,7 +8,7 @@
   ],
   "sitemap_alternate_links": true,
   "stop_urls": [
-    "/release-notes/preview", "/wip", "/common-items", "/en/tags", "/tags", "/ja/tags"
+    "/release-notes/preview", "/wip", "/common-items", "/en/tags", "/tags", "/ja/tags", "/getting-started"
   ],
   "selectors": {
     "lvl0": {
@@ -28,7 +28,13 @@
     "lvl4": "article h4",
     "lvl5": "article h5, article td:first-child",
     "lvl6": "article h6",
-    "text": "article p, article li, article td:last-child"
+    "text": "article p, article li, article td:last-child",
+    "locale": {
+      "selector": "//meta[contains(@name,'docusaurus_locale')]/@content",
+      "type": "xpath",
+      "global": true,
+      "default_value": "ko"
+    }
   },
   "strip_chars": " .,;:#",
   "custom_settings": {
@@ -37,7 +43,8 @@
       "language",
       "version",
       "type",
-      "docusaurus_tag"
+      "docusaurus_tag",
+      "docusaurus_locale"
     ],
     "attributesToRetrieve": [
       "hierarchy",
