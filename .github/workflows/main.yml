@@ -5,7 +5,6 @@ name: typesense docSearch Scraper
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '5 20 * * *'
     - cron: '5 9 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
