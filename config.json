@@ -47,7 +47,8 @@
       "anchor",
       "url",
       "url_without_anchor",
-      "type"
+      "type",
+      "locale"
     ]
   },
   "conversation_id": [
