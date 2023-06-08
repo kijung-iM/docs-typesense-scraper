@@ -22,7 +22,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run Typesense DocSearch Scraper
-        uses: whatap-docs/typesense-scraper@v2.0.4
+        uses: celsiusnarhwal/typesense-scraper@v2.0.1
         with:
           api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
           host: typesense.whatap.io
