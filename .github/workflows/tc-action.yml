@@ -24,10 +24,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run Typesense DocSearch Scraper
-        uses: celsiusnarhwal/typesense-scraper@v2.0.1
+        uses: whatap-docs/typesense-scraper@v2.0.5
         with:
           api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
           host: typesense.whatap.io
           port: 443
           protocol: https
+          collection-locale: ja
           config: config.json
