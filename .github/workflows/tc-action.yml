@@ -26,8 +26,8 @@ jobs:
       - name: Run Typesense DocSearch Scraper
         uses: celsiusnarhwal/typesense-scraper@v2.0.1
         with:
-          api-key: qsY9gCEoYiVtwSAMnyq5RE43lNTRcDVl
-          host: t2dvabr5xq7wn91gp-1.a1.typesense.net
+          api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
+          host: typesense.whatap.io
           port: 443
           protocol: https
           config: config.json
