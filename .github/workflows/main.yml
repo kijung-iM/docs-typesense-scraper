@@ -5,7 +5,7 @@ name: typesense docSearch Scraper
 # Controls when the workflow will run
 on:
   schedule:
-    #- cron: '5 9 * * *'
+    - cron: '5 9 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,11 +21,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run Typesense DocSearch Scraper
-        uses: whatap-docs/typesense-scraper@v2.0.6
+        uses: celsiusnarhwal/typesense-scraper@v2.0.1
         with:
           api-key: o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi
           host: typesense.whatap.io
           port: 443
           protocol: https
-          collection-locale: ja
           config: config.json
